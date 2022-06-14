@@ -54,7 +54,7 @@
         <section class="hero section">
             <div class="container hero-padding">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+        <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--Наши преимущества-->
@@ -105,9 +105,15 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="types-of-work">
-                    <li><img src="./images/desktop.jpg" alt="Компьютер" width="370"></li>
-                    <li><img src="./images/smartphone.jpg" alt="Смартфон" width="370"></li>
-                    <li><img src="./images/laptop.jpg" alt="Лэптоп" width="370"></li>
+                    <li><img src="./images/desktop.jpg" alt="Компьютер" width="370">
+                        <h3>десктопные приложения</h3>
+                    </li>
+                    <li><img src="./images/smartphone.jpg" alt="Смартфон" width="370">
+                        <h3>мобильные приложения</h3>
+                    </li>
+                    <li><img src="./images/laptop.jpg" alt="Лэптоп" width="370">
+                        <h3>дизайнерские решения</h3>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -382,6 +388,18 @@
             </div>
         </div>
     </footer>
+   
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <div type="button" class="close-black" data-modal-close>
+                <svg class="icon-close-black" width="11" height="11">
+                    <use href=".\images\symbol-defs.svg#icon-close-black">
+                    </use>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 
